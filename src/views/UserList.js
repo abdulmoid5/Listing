@@ -39,6 +39,8 @@ class UserList extends Component {
   render = () => {
     const {usersList} = this.props;
     return (
+
+      
       <View style={{margin: 0, padding: 0}}>
         <StatusBar backgroundColor="blue" barStyle="light-content" />
         <ImageHeader text="USERS" />
@@ -46,6 +48,7 @@ class UserList extends Component {
           {usersList.map(item => this.renderUser(item))}
         </ScrollView>
       </View>
+      
     );
   };
 }
